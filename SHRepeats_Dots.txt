@@ -1,0 +1,99 @@
+
+#(set-default-paper-size "letter" 'landscape) 
+#(define page-breaking ly:minimal-breaking)
+
+#(define (with-shapenote-repeats grob)  (let ((g-n (ly:grob-property grob 'glyph-name))) 
+  (cond      
+	((string=? g-n ":") (dotFn grob))
+    ((string=? g-n "|:") (dotFn grob))
+    ((string=? g-n ":|") (barDotFn grob)) 
+    ((string=? g-n "|.") (barDotFnD grob)) 
+	((string=? g-n ".|.") (barFn grob))
+    (else (ly:bar-line::print grob)))))
+
+
+# (define (barDotFn grob) 
+  (interpret-markup 
+   (ly:grob-layout grob) 
+   '(((baseline-skip . 1) (word-space . 0.4) (thickness . 1.9))) 
+   (markup 
+     #:right-align 
+     #:vcenter 
+     #:line ( 
+     #:vcenter 
+     #:column (#:draw-circle '0.18 '0 '#t
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  ) 
+     #:hspace 0.1 
+     #:raise 1.85 #:override '(thickness . 4) #:draw-line '(0 . -3.7) ) ) )) 
+     
+# (define (barFn grob) 
+  (interpret-markup 
+   (ly:grob-layout grob) 
+   '(((baseline-skip . 1) (word-space . 0.4) (thickness . 1.9))) 
+   (markup 
+     #:right-align 
+     #:vcenter 
+     #:line ( 
+     #:raise 1.85 #:override '(thickness . 5) #:draw-line '(0 . -3.7) ) 
+     #:hspace 0.1 
+     #:raise 1.85 #:override '(thickness . 4) #:draw-line '(0 . -3.7) ) ) ) 
+     
+# (define (barDotSt grob) 
+  (interpret-markup 
+   (ly:grob-layout grob) 
+   '(((baseline-skip . 1) (word-space . 0.4) (thickness . 1.9))) 
+   (markup 
+     #:right-align 
+     #:vcenter 
+     #:line ( 
+     #:vcenter 
+     #:override '(thickness . 4) #:draw-line '(0 . -3.7) ) 
+     #:hspace 0.1 
+     #:raise 1.25 
+     #:column (#:draw-circle '0.18 '0 '#t
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  ) 
+     
+      ) )) 
+     
+# (define (barDotFnD grob) 
+  (interpret-markup 
+   (ly:grob-layout grob) 
+   '(((baseline-skip . 1) (word-space . 0.4) (thickness . 1.9))) 
+   (markup 
+     #:right-align 
+     #:vcenter 
+     #:line ( 
+     #:vcenter 
+     #:column (#:draw-circle '0.18 '0 '#t
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  ) 
+     #:hspace 0.1 
+     #:raise 1.85 #:override '(thickness . 5) #:draw-line '(0 . -3.7) ) 
+     #:hspace 0.1 
+     #:raise 1.85 #:override '(thickness . 5) #:draw-line '(0 . -3.7) ) ) )
+
+
+# (define (dotFn grob) 
+  (interpret-markup 
+   (ly:grob-layout grob) 
+   '(((baseline-skip . 1) (word-space . 0.8) (thickness . 3))) 
+   (markup 
+     #:right-align 
+     #:vcenter 
+     #:line ( 
+     #:vcenter 
+     #:column (#:draw-circle '0.18 '0 '#t
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  
+                   #:draw-circle '0.18 '0 '#t  ) 
+     ) ) ))    
+
+flat = \markup { \raise #0.4 \smaller \musicglyph #"accidentals--2" }
+sharp = \markup { \raise #0.6 \smaller \musicglyph #"accidentals-2" }
+textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #"scripts-coda"}
+

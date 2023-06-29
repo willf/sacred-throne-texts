@@ -1,0 +1,185 @@
+\version "2.13.18"
+\include "..\SHRepeats_Dots.ly"
+
+global = {
+	\key c \major % really a minor
+	\time 4/4
+	\sacredHarpHeads
+	\autoBeamOff
+}
+
+\paper {
+	#(set-paper-size "letter" 'landscape)
+	line-width = 10\in
+	horizontal-shift = 0.175\in
+	top-margin = 0.3\in
+%	bottom-margin = 0.5\in
+	ragged-last = ##f
+	ragged-bottom = ##t
+%	system-count = #2 %Suggests to Lilypond how many braces to use for this piece.
+	evenHeaderMarkup = \markup {
+		\column {
+			\fill-line {
+			  \bold \fontsize #3 \on-the-fly #not-first-page \fromproperty #'header:title
+			}
+			\large \on-the-fly #print-page-number-check-first \fromproperty #'page:page-number-string
+			" "
+		}
+	}
+	oddHeaderMarkup = \markup {
+		\column {
+			\fill-line {
+			  \bold \fontsize #3 \on-the-fly #not-first-page \fromproperty #'header:title
+			}
+			\large \on-the-fly #print-page-number-check-first \fromproperty #'page:page-number-string
+			" "
+		}
+	}
+}
+
+\header {
+	title = \markup { \caps "Sinai." } %Tune name and hymn meter
+	poet = \markup { "A Minor.  Isaac Watts." } %key and poet
+	composer = " " %Tune composer and date
+	tagline = ##f %Turns off annoying Lilypond version stamp on bottom of page
+}
+
+trebleMusic = \relative c''
+{
+	a1 a2 c4( a) b2 b c2( b4) a gis2. 
+	gis4 a b c4. ( d8 c4) b a gis a1
+	r2
+	c2 b4 b b b c4.( d8 e4) d8[ c] b2.
+	c8.[ b16] a4 a b c b( a) gis2 a1
+	r2
+	b2 c4 c8[ b] a4 a e'4.( d8 c4) b c2( b4) 
+	g a a8.[ b16] c4 c c4.( d8 c4) b8[ a] b2.
+	b4 c c c c8.[ d16] e4.( f8 e4) b c2( b2)
+	r2
+	b2 c4.( d8 e4) e c4.( b8 a4) b c( a) gis2 a1	
+}
+
+altoMusic = \relative c'
+{
+	\clef alto
+
+	e1 e2 e e e e4( a g) e e2.
+	e4 e e8[ f] g2 g4 f e e e1
+	r2
+	e2 g4 g g g8[ f] e2. a4 g2.
+	g8[ f] e4 e8[ f] g4 a g f e2 e1
+	r2
+	g2 e4 e e e a2. g4 g2.
+	g4 e e e e8.[ f16] g4.( f8 e4) f e2.
+	e4 e e e e e2( a4) g g1
+	r2
+	g2 e e a2( e4) f e2 e e1
+}
+
+tenorMusic = \relative c''
+{
+	a1 c2 a4( c) b2 e c4( a d) c b2.
+	b4 c d e4.( g8 e4) d c b a1
+	r2
+	c2 e4 e e e8[ g] g2. f4 e2. 
+	e4 c c e e d( c) b2 a1
+	r2
+	e'2 c4 c c c a4.( b8 c4) d e2.
+	e4 c c8.[ b16] a4 a g4.( a8 g4) f e2.
+	e4 a a a a8.[ b16] c4.( d8 c4) d e1
+	r2
+	e2 c a c4.( d8 e4) d c2 b a1
+}
+
+bassMusic = \relative f
+{
+	\clef bass
+	a,1 a'2 a, e' e a( g4) a e2.
+	e4 a g8[ f] e4.( d8 c4) d e e a,1
+	r2
+	a'2 e4 e e e8[ d] c2. d4 e2.
+	e4 a a e c g'( a) e2 a,1
+	r2
+	e'2 a4 a a a c4.( b8 a4) b e,2.
+	e4 a a a, a c2. d4 e2.
+	e4 a, a a a a'2. b4 e,1
+	r2
+	e2 a a, a'4.( b8 c4) b a2 e a,1
+	\bar ".|."
+}
+
+verseTreble = \lyricmode
+{
+%	\set stanza = "1."
+	O the immense, the a -- ma -- zing height, 
+  The bound -- less gran -- deur of our God, 
+
+	Who treads the worlds be -- neath his feet, 
+  And sways the na -- tions with his nod! 
+
+	He speaks: and lo, all na -- ture shakes, 
+  Heav'n's e -- ver -- las -- ting pil -- lars bow; 
+
+	He rends the clouds with hi -- deous cracks. 
+  And shoots his fie -- ry ar -- rows through. 
+}
+
+verseAlto = \lyricmode
+{
+}
+
+verseTenor = \lyricmode
+{
+%	\set stanza = "1."
+	O the immense, the a -- ma -- zing height, 
+  The bound -- less gran -- deur of our God, 
+
+	Who treads the worlds be -- neath his feet, 
+  And sways the na -- tions with his nod! 
+
+	He speaks: and lo, all na -- ture shakes, 
+  Heav'n's e -- ver -- las -- ting pil -- lars bow; 
+
+	He rends the clouds with hi -- deous cracks. 
+  And shoots his fie -- ry ar -- rows through. 
+}
+
+verseBass = \lyricmode
+{
+}
+
+\score 
+{
+	\new StaffGroup <<
+		\new Staff = "treble" {	\global \trebleMusic }
+		\addlyrics { \verseTreble }
+		\new Staff = "alto" { \global \altoMusic }
+%		\addlyrics { \verseAlto }
+		\new Staff = "tenor" { \global \tenorMusic }
+		\addlyrics { \verseTenor }
+		\new Staff = "bass" { \global \bassMusic }
+%		\addlyrics { \verseBass }
+	>> 
+	\layout {
+		#(layout-set-staff-size 20)    % target is 20
+		indent = #0
+		\context { \Score
+			\remove "Bar_number_engraver" %Gets rid of measure numbers at the beginning of each brace
+			\override SpanBar #'transparent = ##t %Turns off staff lines between staves
+			\override LyricText #'font-size = #-1.5
+			\override StanzaNumber #'font-size = #-1.5
+			\override StanzaNumber #'font-series = #'medium
+			\override VoltaBracket #'stencil = ##f
+		}
+		\context { \Staff
+			\override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
+			\override BarLine #'stencil = #with-shapenote-repeats
+		}
+	}
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 110 4) %Sets the metronome speed and value of the beat
+		}
+	}
+}
