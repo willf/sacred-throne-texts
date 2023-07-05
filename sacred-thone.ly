@@ -97,9 +97,9 @@ bassMusic = {
 		\context Lyrics = "verseOne" {
 			\lyricsto "three" { \stanzaOne }
 		}
-		\context Lyrics = "verseTwo" {
-			\lyricsto "three" { \stanzaTwo }
-		}
+%		\context Lyrics = "verseTwo" {
+%			\lyricsto "three" { \stanzaTwo }
+%		}
 		\context Lyrics = "verseThree" {
 			\lyricsto "three" { \stanzaThree }
 		}
