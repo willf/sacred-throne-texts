@@ -41,4 +41,4 @@ A[^8] Mary's or Manasseh's stains, or sins more vile than they.
 
 [^7]: make away/take away. Kent's original has "take away." No other witness has "make away". "Make away" doesn't really make sense. "Make away" is not really an intransitive verbal phrase in English. Kent's image describes taking away the sins of sinners like Mary or Manasseh, which does make sense. As far as I can tell, there is no theological point being made by using "make away" instead of "take away."
 
-[^8]: And/A. Kent's original as "a", introducing the direct object of "take away". No other witness as "and".
+[^8]: And/A. Kent's original as "a", introducing the direct object of "take away". No other witness has "and".
