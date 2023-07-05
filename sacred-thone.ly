@@ -30,7 +30,7 @@ That wafts sal -- va -- tion down to men, his trai -- tors and his foes.
 
 stanzaFour = \lyricmode {
 	\set stanza = "4."
-	That sa -- cred flood, from Je -- sus' veins, was free to take a -- way
+	That sa -- cred flood, from Je -- sus' veins was free to take a -- way
 A Ma -- ry's or Ma -- nas -- seh's stains, or sins more vile than they.
 }
 %% TODO set alto, bass
