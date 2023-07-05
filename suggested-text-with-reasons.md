@@ -27,7 +27,6 @@ That wafts salvation down to men[^4], his[^5] traitors and his[^5] foes.
 That sacred flood from Jesus'[^6] veins was free to take away[^7]
 A[^8] Mary's or Manasseh's stains, or sins more vile than they.
 
-----
 
 [^1]: stream where/streams were. There are two editions of John Kent's Original Gospel Hymns available online to me, the sixth and ninth editions. The sixth edition has "were". The ninth edition has "where".  JE Kitchen's 1954 version has "where," which is also what is used in "Good Old Songs". However, almost all printings use "were." I think either is acceptable, but (a) it is more likely that Kent's intention was "were," and (b) since "salvation" is "wafted" (carried) by the stream, it makes more sense that "peace and pard'ning blood" be the essence of the stream rather than something else carried along.
 
