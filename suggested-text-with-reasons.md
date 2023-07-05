@@ -40,6 +40,6 @@ A[^8] Mary's or Manasseh's stains, or sins more vile than they.
 
 [^6]: Jesus's/Jesus's. Kent's original has "Jesu's". Based on my analysis of Original Gospel Hymns, Kent uses this as the elliptical version oF "Jesus's" (as we would write it out today) in order to have the poem scan as two beats in a iambic foot for Common Meter. So, I recommend leaving the 1966/1991 version as is.
 
-[^7]: make away/take away. Kent's original has "take away." No other witness has "make away". "Make away" doesn't really make sense. "Make away" is not really an intransitive verbal phrase in English. Kent's image describes taking away the sins of sinners like Mary or Manasseh, which does make sense. As far as I can tell, there is no theological point being made by using "make away" instead of "take away."
+[^7]: make away/take away. Kent's original has "take away." No other witness has "make away". "Make away" doesn't really make sense: "Make away" is not really an intransitive verbal phrase in English. Kent's image describes taking away the sins of sinners like Mary or Manasseh, which does make sense. As far as I can tell, there is no theological point being made by using "make away" instead of "take away."
 
 [^8]: And/A. Kent's original as "a", introducing the direct object of "take away". No other witness has "and".
