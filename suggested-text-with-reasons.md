@@ -7,7 +7,7 @@ Here I present a "clean text" with the all the changes from the 1991 edition to 
 ## Clean text
 
 Beneath the sacred throne of God I saw a river rise;
-The stream were peace and pard'ning blood descending from the skies.
+The streams were peace and pard'ning blood descending from the skies.
 
 I stood amazed, and wondered when or why this ocean rose,
 That wafts salvation down to men, his traitors and his foes.
