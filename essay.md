@@ -41,13 +41,13 @@ But we have a problem! The text we use is somewhat garbled; at points, it doesn'
 
 The following is Kent's original text, using current copyediting practice. I'm also including his second verse.
 
-1. Beneath the sacred throne of God I saw a river rise;
+1. Beneath the sacred throne of God I saw a river rise;<br>
    The streams were peace and pardoning blood descending from the skies.
-2. Angelic minds cannot explore this deep, unfathomed sea;
+2. Angelic minds cannot explore this deep, unfathomed sea;<br>
    'Tis void of bottom, brim, or shore and lost in Deity.
-3. I stood amazed, and wondered when or why this ocean rose,
+3. I stood amazed, and wondered when or why this ocean rose,<br>
    That wafts salvation down to men, his traitors and his foes.
-4. That sacred flood from Jesus' veins was free to take away
+4. That sacred flood from Jesus' veins was free to take away<br>
    A Mary's or Manasseh's stains, or sins more vile than they.
 
 In verse 1, editions of Kent's poem as printed in his *Original Gospel Songs* have either "were" or "where" in the second line. Most printings of the poem have "were," and so I use it here.
